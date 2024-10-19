@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Train IR</title>
+</head>
+<style>
+    html{
+        background-image: url(cartoon-smoke-with-train_23-2151234924.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+    #MainLogin{
+        background: transparent;
+        backdrop-filter: blur(4px);
+        box-shadow: 20px 20px 30px wheat;
+        border-radius: 20px;
+        margin-left: 50px;
+        margin-right: 60px;
+        animation: bluy 3s ease;
+        animation-duration: 3s;
+        animation-delay: 0.5s;
+    }
+    @keyframes bluy {
+        0%{ margin: 600px; backdrop-filter: blur(580px); border: 4px solid;}
+        100%{}
+    }
+    h2{
+        text-align: center;
+        margin-top: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        text-shadow: 2px 7px 14px ;
+        font-variant: small-caps;
+        font-weight: bolder;
+        animation: main 2s ease-in-out ;
+        animation-duration: 2.3s;
+        animation-delay: 1.7;
+    }
+    @keyframes main {
+        0%{ margin-left: 600px;}
+        100%{}
+        
+    }
+    .login{
+        text-align: center;
+        font-size: large;
+        font-family:sans-serif ;
+        padding: 5vh;
+    }
+    .login input{
+        background-color: skyblue;
+        border: 3px ridge black;
+        font-size: 14px;
+        filter: drop-shadow(8px 13px 19px );
+    }
+    a{
+        color: black;
+        background-color: aliceblue;
+        font-family: serif;
+        text-decoration: none;
+        border: 1.8px solid rgb(87, 192, 187);
+    }
+    button{
+        color: rgb(13, 17, 16);
+        background-color: rgb(95, 148, 201);
+        font-size: 16px;
+        align-self: center;
+        transition: all 1s linear;
+        cursor: pointer;
+    }
+    button:hover{
+        color: antiquewhite;
+        background-color: black;
+    }
+    p{
+        color: aliceblue;
+    }
+</style>
+<body>
+    <div id="MainLogin">
+    <h2> Login Page</h2>
+    <div class="login">
+        Login ID <input type="text" name="Name" id="name" required> <br> <br>
+        Password <input type="password" name="password" id="password" required>
+        <br> <br>
+        <a href=""> Forgot Password</a>
+        <br><br>
+        <button>Sumbit</button>
+        <br><br>
+        <p> IF A New User <a href="SignIN.html"> Cilick On</a> </p>        
+    </div>
+</div>
+</body>
+</html>

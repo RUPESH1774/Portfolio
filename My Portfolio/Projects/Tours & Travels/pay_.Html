@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(73, 70, 70);
+        }
+    header h1{
+            text-align: center;
+            color: darkorange;
+            border-radius: 20px;
+            height: fit-content;
+            background-color: black;
+            font-weight: 900;
+            font-stretch: extra-expanded;
+            text-decoration: double;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            /* animation: mymove 2s infinite; */
+            
+        }
+        h1{
+            color: rgb(229, 255, 0);
+            font-size: larger;
+        }
+
+    .de{
+        border: 30px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: underline;
+        text-overflow: ellipsis;
+        color: rgb(98, 192, 22);
+        background-color: black;
+        margin: 50px;
+        border-style: dashed;
+        
+    }
+    h2{
+            font-size: larger;
+            text-decoration: underline;
+            text-shadow: 20px;
+            border-radius: 30px;
+            display: inline;
+            background-color: aqua;
+            
+        }
+    .me{
+        color: darkgreen;
+        background-color: black;
+        height: fit-content;
+        border: 2px solid yellow;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        border-radius: 20px;
+
+    }
+    .select{
+        color: rgb(230, 148, 49);
+        backface-visibility: visible;
+        background-origin: border-box;
+        border-style: dashed;
+        border: 200px;
+        text-align: center;
+        background-color: crimson;
+
+    }
+    .option{
+        text-align: center;
+        background-color: black;
+    }
+    .payment{
+        color: darkorange;
+        background-color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        word-wrap: break-word;
+    }
+    /* @keyframes mymove {
+    33% {aspect-ratio: 0.5;}
+    66% {aspect-ratio: 2;}
+    } */
+    .buy{
+        color: crimson;
+        background-color: black;
+        border-style: dotted;
+        border: 12px soild green;
+        height: 30px;
+    }
+    .buy:hover{
+        box-sizing: border-box;
+        filter: drop-shadow(3px 5px 10px rgba(32, 43, 32, 0.384));
+    }
+
+    
+    </style>
+</head>
+<body>
+    <header><h1> Payment Form</h1></header>
+    <div class="de">
+    Name<input type="text" placeholder="Entre Your Name"> <br><br> <br>
+    Address <input type="text" placeholder="Entre Your Address" size="50"><br><br>
+       Gender <br> 
+    Male <input type="radio" name="Male" id="Male">
+    Female<input type="radio" name="Female" id="Female"><br> <br>
+    Age <input type="number" placeholder="entre tour Age"><br><br><br> 
+</div>
+    <ul>
+    <li><h1> How many people Want go with You </h1></li>
+      <li> <h1> if u are single then write 1 </h1></li>
+    </ul>
+       <div class="me">
+    people <input type="number" name="number" id="people"><br> <br>
+    Male<input type="number" name="male" id="male">
+    Female <input type="number" name="" id=""> <br> <br>
+    Date <input type="date" name="date" id="date">
+</div> <br><br>
+<hr>
+    <div class="option">
+    <h2> Select Your Palce</h2> <br> <br><br>
+    <select class="select">
+        <option value="">--Select Your Place ---</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Maharastra">Maharastra</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Uttar pardesh(UP)">Uttar pardesh (UP) </option>
+        <option value="madhy pardesh (MP)">madhy pardesh (MP)</option>
+    </select> <br><br><br> <br>
+    <select class="select">
+        <option value="">--Select Your Payment ---</option>
+        <option value="UPI">UPI</option>
+        <option value="Card">Card</option>
+        <option value="cash">cash</option>
+        <option value="Net_Banking">Net_Banking </option>
+    </select> 
+</div><br><br> <br>
+<div class="Payment">
+    <a href="thanks.html">
+ <input class="buy" type="submit" value="paynow">
+</div>
+</a>
+</body>
+</html>

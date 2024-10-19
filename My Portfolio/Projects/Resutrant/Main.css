@@ -1,0 +1,251 @@
+
+*{
+    background-image: url(background1.jpg);
+    background-position: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+nav{
+    display: flex;
+    text-align: center;
+    text-decoration: none; 
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    position: -webkit-sticky;
+    animation: nav 2s linear;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+}
+@keyframes nav {
+    0%{ padding-left: 400px;}
+    100%{}
+    
+}
+a h2{
+    float: left;
+    color: steelblue;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    position: relative;
+    text-shadow: 12px 15px 20px black;
+    margin-left: 12px;
+}
+nav ul{
+    display: flex;
+    align-self: center;
+    gap: 20px;
+    text-decoration: none;
+}
+nav ul li{
+ display: flex;
+    gap: 7px;
+    margin-left: 20px;
+}
+nav ul li::before{
+    content: "|";
+    margin-left: 1px;
+}
+nav ul li a{
+    color: rgb(157, 173, 187);
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    display: flex;
+    text-decoration: none;
+    transition: all 2s linear;
+    animation: word 3s linear;
+    animation-duration: 2.4s;
+    animation-delay: 1s;
+}
+@keyframes word {
+    from{ font-size: 26px;}
+    to{}
+}
+nav ul li a:hover{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-shadow: 8px 14px 20px ;
+}
+    .buu button{
+background: none;
+float: right;
+margin-right: 20px;
+color: aliceblue;
+height: 40px;
+font-size: 13px;
+border-radius: 12px;
+background-color: rgb(0, 0, 0);
+}
+aside{
+    margin-top: 40px;
+    /* margin-right: 500px; */
+    font-size: large;
+    font-family: monospace;
+    color: aliceblue;
+    background: none;
+    animation: asid 3.4s ease-in;
+    animation-duration: 2.2s;
+    animation-delay: 1.2s;
+}
+@keyframes asid {
+    from{ padding-top: 600px;}
+    to{}
+}
+aside p{
+    z-index: 0;
+}
+aside img{
+    float: left;
+    margin-left: 112vh;
+    margin-top: -17px;
+    z-index: 1;
+}
+.Meenu{
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-align: 200px;
+    animation: menn 3.9s linear;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+}
+@keyframes menn {
+    from{padding-left: 2000px;}
+    to{}
+}
+.Menu{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    padding: 0;
+    border-collapse: collapse;
+    display: flex;
+    border: 2px solid whitesmoke;
+    flex-direction: column;
+    /* overflow-x: scroll; */
+    /* overflow-y: scroll; */
+}
+.Menu table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding-right: 1100px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+.Menu table tr{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-variant: small-caps;
+    row-gap: 60px;
+    transition: all 1s linear;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    cursor: pointer;    
+}
+.Menu table tr:hover{
+    
+    font-family: cursive;
+    background-color: antiquewhite;
+}
+/* .Menu img{
+    border: 2px solid gray;
+    margin-top: -180px;
+    border-radius: 20px;
+    margin-left: 400px;
+} */
+h2{
+    background: none;
+    color: rgb(113, 146, 175);
+    font-size: 30px;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 12px 20px 30px; 
+}
+h3{
+    background: none;
+    color: aliceblue;
+    font-size: 30px;
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 12px 20px 30px;
+}
+#About{
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.image_About{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+.image_About img{
+    animation: imm 3.8s linear;
+    animation-duration: 4.2s;
+    animation-delay: 4.7s;
+}
+@keyframes imm {
+    from{ margin-left: 400px;}
+    to{}
+}
+.image_About h5{
+    margin-top: 200px;
+    margin-left: -200px;
+    font-size: larger;
+    cursor: pointer;
+}
+.Contact_US{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    /* background-image: url(contact.jpg);
+    background-position: center; */
+    height: 150vh;
+    color: black;
+    
+}
+.Contact_US h2{
+    background: none;
+    color: aliceblue;
+    text-align: center;
+}
+.Contact_US h4{
+    background: none;
+    color: black;
+    text-align: center;
+}
+.Contact_US #kk{
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: large;
+}
+.Contact_US #kk input{
+background-color: antiquewhite;
+height: 20px;
+align-items: start;
+}
+.Contact_US #kk #Message{
+    height: 80px;
+    border: 2px solid black;
+    text-align: center;
+
+}
+.Contact_US a{
+    text-decoration: none;
+    color: rgb(197, 214, 226);
+    background-color: aquamarine;
+}
+.Contact_US a img{
+    margin-left: 240px;
+    filter: drop-shadow(12px 18px 22px rgb(106, 179, 175));
+    transition: all 2s ease-in-out;
+    transition-delay: 0.9s;
+    transition-duration: 1s;
+}

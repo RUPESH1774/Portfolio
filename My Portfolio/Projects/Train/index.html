@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAILWAY</title>
+    <link rel="icon" href="train logo.jpeg">
+    <style>
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+nav{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: steelblue;
+text-decoration: none;
+animation: navv 3s linear;
+animation-duration: 2s;
+animation-delay: 1s;
+}
+@keyframes navv {
+    From{
+        margin: 400px;
+    }
+    to{
+        margin: 0;
+    }
+    
+}
+nav ul{
+display: flex;
+gap: 50px;
+padding:30px;
+font-style: no;
+padding-left: 28vh;
+}
+        nav ul li{
+            display: flex;
+            font-size: 23px;
+        }
+        nav li::before{
+            content: "|";
+        }
+        nav ul li a{
+            text-decoration: none;
+            transition: all 2s linear;
+            transition-duration: 2s;
+            color: black;    
+            animation: ml 2s linear;
+            animation-duration: 2s;
+            animation-delay: 2.2s;
+        }
+        @keyframes ml {
+            From{
+                filter: blur(200px);
+            }
+            to{
+
+            }
+        }
+        nav ul li a:hover{
+            margin-left: 5px;
+            color: aliceblue;
+        }
+        img{
+            border: 12px solid rgb(103, 103, 153);
+            border-radius: 50%;
+            height: 130px;
+            margin-top: -55px;
+            margin-left: 22px;
+            animation: train 2s linear;
+            animation-duration: 2.5s;
+            animation-delay: 1.7s;
+        }
+        @keyframes train {
+            From {
+                margin-left: 2000px;
+                padding-top: 200px;
+            }   
+        }
+        h2{
+            text-align: center;
+            margin: 12px;
+            font-size: 40px;
+            color: slateblue;
+            animation: main 2s linear;
+            animation-duration: 3s;
+            animation-delay: 3.5s;
+        }
+        .image{
+            border: none;
+            margin-top: -100px;
+            margin-left: 120vh;
+        }
+        @keyframes main {
+            From{
+                margin-right: 700px;
+            }
+            
+        }
+        
+         #dis{
+            text-align: center;
+            font-size: large;
+            color: teal;   
+            background-color: black;
+            animation: we 2s linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-delay: 1.2s;
+            cursor: pointer;
+        }
+        @keyframes we {
+            From{
+                background-color: black;
+                color: aliceblue;
+            }
+            to{
+
+            }
+        }
+        .butt{
+            float: right;
+            font-family: 'Courier New', Courier, monospace;
+            margin-right: 35px;
+            margin-top: 12px;
+        }
+        .butt button{
+            height: 30px;
+            font-size: large;
+            width: 60px;
+            background-color: rgb(65, 65, 71);
+            margin-right: 27px;
+        }
+        .butt button:hover{
+            color: rgb(220, 226, 243);
+            background-color: rgb(78, 86, 204);
+            cursor: pointer;
+        }
+        .force{
+            color: rgb(200, 226, 226);
+            background-color: rgb(44, 142, 187);
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+        }
+        .force input{
+            background-color: whitesmoke;
+            
+            border:none;
+            height: 30px;
+            border-radius: 15px;
+            
+        }
+        .buy{
+            color:gray;
+            background-color: black;
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor: pointer;
+        }
+        h3{
+            text-align: center;
+            margin-top: 160px;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+            background-color: rgb(64, 99, 165);
+            margin-left: 180px;
+            margin-right: 170px;
+            transition: all 3s ease ;
+        }
+        h3:hover{
+            background-color: black;
+            color: wheat;
+        }
+        fieldset{
+            text-align: center;
+            margin-top: 12px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+        .pass{
+            margin: 17px;
+            background-color: rgb(212, 212, 212);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 1000;
+        }
+        .pass input{
+            background-color: beige;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+            border: 4px solid skyblue;
+        }
+        /* .pass button{
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+            padding: 3px;
+            cursor: pointer;
+            background-color: #070d4d;
+            color: aliceblue;
+            
+        } */
+        .bn32 {
+             border-color: #ffffff;
+            padding: 0.6em 2.3em;
+            cursor: pointer;
+            font-size: 1em;
+            color: #ffffff;
+            background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+            background-position: 25%;
+            background-size: 400%;
+            -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+            transition: background 500ms ease-in-out, color 500ms ease-in-out;
+        }
+
+        .bn32:hover {
+        color: #ffffff;
+         background-position: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="">Home</li></a>
+            <li><a href="">About US</li></a>
+            <li><a href="">Help</li></a>
+           <li><a href="">Contact Us</li></a>
+        </ul>
+        
+    </nav>
+    
+    <img src="train logo.jpeg" alt="" height="120">
+    <div class="butt">
+      <a href="SignIN.html">  <button>SignIN</button></a>
+      <a href="Login.html">  <button>Login</button></a>
+    </div>
+             <h2>INDIAN RAILWAY  <img class="image" src="trainmm-removebg-preview.png" alt="">
+                </h2>
+        <a href="SignIN.html">   <p id="dis"> Book Ticket Now  
+        Create Account Now & Get 25% Discount</p> <br>
+        </a>
+        <br><br> <br><br>
+    <p class="force"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From Station &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destination Station <br> 
+    <input type="text" name="" id="" placeholder="Entre City name " *> TO
+    <input type="text" name="" id="" placeholder="Entre city name" *> <br>
+     <br>
+    <button class="buy">Sumbit</button>
+</p>
+    <h3> Passenger Details</h3>
+    <fieldset>
+    <div  class="pass" >
+    Name <input type="text" placeholder="Entre Passenger Name" required>
+    <br> <br>
+        Gender <br>
+        Male <input type="radio" name="" id="" required> &nbsp;&nbsp;&nbsp;
+        Female <input type="radio" name="" id="">
+        <br><br>
+        Mobile No. <input type="number" name="" id="" placeholder="Entre Mobile NO" required>
+            <br><br>
+      <!-- <a href="Sumbit.html"> <button>Sumbit</button></a> -->
+      <a href="Sumbit.html"><button class="bn-32 bn32">Sumbit</button></a>
+    </div>
+
+
+
+</fieldset>
+</body>
+</html>

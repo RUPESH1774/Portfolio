@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIN</title>
+<style>
+    html{
+       background-image: url(view-3d-modern-train-with-nature-scenery.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    Form{
+        text-align: center;
+        font-size: large;
+        font-weight: 300;
+        /* animation: form 2s ease-in;
+        animation-duration: 2s;
+        animation-delay: 2s; */
+    }
+    /* @keyframes form {
+        From{
+            padding-left: 700px;
+            background-color: antiquewhite;
+        }
+    } */
+    H1{
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        background-color: black;
+        margin-left: 250px;
+        margin-right: 200px;
+        transition: all 2s linear;
+        transition-duration: 1.6s;
+        animation: head 1s ease-in-out;
+        animation-duration: 2.5s;
+        animation-delay: 1s;
+        
+    }
+    @keyframes head {
+        From{
+            margin-top: -300px;
+            
+        }
+    }
+    H1:hover{
+        background-color: whitesmoke;
+        color: darkcyan;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 1200;
+        font-variant: small-caps;
+        text-shadow: 12px 16px 20px ;
+        border-radius: 17px;
+        box-shadow: 12px 16px 20px black;
+        color: rgb(146, 226, 214);
+        background: transparent;
+        backdrop-filter: blur(10px);
+        
+        border: 2px soid black;
+        padding: 8px;
+        margin: 120px;
+        animation: header 3s ease-in-out;
+        animation-duration: 3s;
+        animation-delay: 1.6s;
+    }
+        @keyframes header {
+            from{
+                filter: blur(30px);
+            }
+            
+        }
+    
+div input{
+    background-color: rgba(55, 129, 189, 0.589);
+    color: whitesmoke;
+    font-size: 15px;
+}
+div .ni{
+    color: black;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <Form>
+    <H1>Resgister Form </H1>
+    <div> 
+        First Name <input type="text" name="" id="">
+        Last Name <input type="text" name="" id=""><br><br>
+        Email <input type="email" name="Email" id=""><br><br>
+        Mobile No <input type="number" name="" id=""><br><br>
+            Gender <br>
+            Male <input type="radio" name="" id="">
+            Female <input type="radio" name="" id=""><br><br>
+        Password <input type="password" name="" id=""><br><br>
+        Re-Entre Password <input type="password" name="Password" id=""> <br><br>
+     <a href="index.html">  <input class="ni" onclick="sumbi()" type="button" value="Sumbit"></a>
+    </div>
+  </Form>  
+  <script>
+    function sumbi(){
+        alert('Your Account Created Sucessfully')
+        alert("click OK then go to Home Page")
+        
+    }
+  </script>
+</body>
+</html>
